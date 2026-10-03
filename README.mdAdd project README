@@ -1,0 +1,128 @@
+# Customer Churn Prediction Using Machine Learning
+
+## 📌 Project Overview
+
+This project focuses on predicting customer churn using machine learning techniques.
+
+The project uses the IBM Telco Customer Churn dataset and follows an end-to-end machine learning workflow, including data cleaning, exploratory data analysis, feature engineering, model training, evaluation, and business insights.
+
+## 🎯 Objective
+
+The main objective is to identify customers who are more likely to churn and understand the customer characteristics associated with churn.
+
+## 📊 Dataset
+
+The project uses the IBM Telco Customer Churn dataset.
+
+After data cleaning:
+
+* 7,010 customer records were used
+* 20 original features were available before encoding
+* Missing values and duplicate records were removed
+* `customerID` was removed because it is an identifier rather than a predictive feature
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Google Colab
+
+## 🔧 Data Preparation
+
+The following preprocessing steps were performed:
+
+1. Converted `TotalCharges` to numeric format
+2. Handled missing values
+3. Removed duplicate records
+4. Removed `customerID`
+5. Converted categorical variables using one-hot encoding
+6. Split the dataset into training and testing sets
+7. Applied StandardScaler for feature scaling
+
+## 📈 Exploratory Data Analysis
+
+The project analyzes:
+
+* Overall customer churn distribution
+* Churn by contract type
+* Customer tenure and churn
+* Important customer characteristics associated with churn
+
+## 🤖 Machine Learning Models
+
+Two classification models were evaluated:
+
+### Logistic Regression
+
+* Accuracy: **80.88%**
+* Churn Recall: **0.54**
+* Churn F1-Score: **0.60**
+
+### Random Forest
+
+* Accuracy: **78.89%**
+* Churn Recall: **0.49**
+* Churn F1-Score: **0.55**
+
+Based on these test-set results, Logistic Regression was selected as the final model.
+
+## 🔍 Important Features
+
+The model identified several features with relatively strong coefficients, including:
+
+* Tenure
+* Total Charges
+* Contract Type
+* Internet Service
+* Monthly Charges
+* Paperless Billing
+* Payment Method
+* Technical Support
+
+These are model associations and should not be interpreted as proof that a feature directly causes churn.
+
+## 💼 Business Insights
+
+The analysis indicates that:
+
+* Customers with shorter tenure show higher churn tendency.
+* Longer-term contracts are associated with lower churn tendency.
+* Fiber optic internet customers show higher churn tendency in this model.
+* Customers with technical support show lower churn tendency.
+* Electronic check payment is associated with higher churn tendency.
+
+These insights can help businesses identify customer groups that may require further analysis and retention efforts.
+
+## 📁 Project Structure
+
+```text
+customer-churn-prediction/
+│
+├── Customer_Churn_Prediction.ipynb
+└── README.md
+```
+
+## 🚀 Key Learning Outcomes
+
+Through this project, I practiced:
+
+* Data cleaning and preprocessing
+* Exploratory Data Analysis
+* Feature engineering
+* One-hot encoding
+* Feature scaling
+* Classification algorithms
+* Model evaluation
+* Confusion matrix
+* Feature importance
+* Business interpretation of machine learning results
+
+## 👩‍💻 Author
+
+**Harshada Borse**
+
+Aspiring Data Analyst / Data Scientist
